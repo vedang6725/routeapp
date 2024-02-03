@@ -1,0 +1,42 @@
+<div class="container">
+    <nav>
+        <ul>
+            <li routerLink="/home">Home</li>
+            <li>Services</li>
+            <li>Products</li>
+            <li routerLink="/login">Login</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</div>
+
+
+
+
+
+<section>
+    <div *ngFor="let product of products">
+        {{product.name}}
+    <div class="product-card spacing">
+        <div class="badge">New Product</div>
+        <div class="product-thumb">
+            <img src="https://cdn-icons-png.flaticon.com/512/2806/2806251.png">
+        </div>
+        <div class="product-details">
+            <span class="product-category">T-Shirt</span>
+            <h4><a href="#">New T-Shirt For Man</a></h4>
+            <p>New Import T-Shirt For Man Very Rare Collection, If You Want Order Right Now</p>
+            <div class="product-bottom-details">
+                <div class="product-price"><small>$15.10</small>$7.99</div>
+                <div class="product-links">
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- {{name | uppercase}}
+{{price | currency(EUR)}} -->
