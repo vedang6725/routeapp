@@ -1,17 +1,16 @@
 <h1 align="center" style="margin-top: 50px;">Login Form</h1>
 <div class="parent">
-<form class="example-form">
+<form  [formGroup]="loginForm" class="example-form" (ngSubmit)="login()">
     <mat-form-field class="example-full-width">
       <mat-label>USERNAME</mat-label>
-      <input matInput placeholder="username">
+      <input formControlName="username" matInput placeholder="username">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
         <mat-label>PASSWORD</mat-label>
-        <input matInput placeholder="password">
+        <input formControlName="password" matInput placeholder="password">
     </mat-form-field>
 
-    <button (click)="login()" align="center" mat-raised-button color="primary">LOGIN</button>
+    <button align="center" mat-raised-button color="primary">LOGIN</button>
 </form>
 </div>
-  
