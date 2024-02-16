@@ -38,5 +38,9 @@
 </div>
 </section>
 
-<!-- {{name | uppercase}}
-{{price | currency(EUR)}} -->
+{{name | uppercase}}
+{{price | currency:"EUR"}}
+
+<div *ngFor="let i of productData">
+    {{i.title}} -- {{i.price}}
+</div>
