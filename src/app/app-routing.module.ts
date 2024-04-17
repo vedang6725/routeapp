@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AuthGuard } from './guards/auth.guard';
+import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   },{
     path:"home",
     component:HomeComponent,
+    canActivate: [AuthGuard]
+  },{
+    path:"skills",
+    component:SkillsComponent,
     canActivate: [AuthGuard]
   },{
     path:"**",

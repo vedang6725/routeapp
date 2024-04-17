@@ -11,13 +11,15 @@ import {MatButtonModule} from '@angular/material/button';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

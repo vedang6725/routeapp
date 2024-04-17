@@ -1,0 +1,26 @@
+<header>
+    <div class="home">
+        <h1>Your Name</h1>
+        <p>Web Developer</p>
+    </div>
+</header>
+
+<div class="container">
+    <nav>
+        <ul>
+            <li routerLink="/home">Home</li>
+            <li>About Me</li>
+            <li routerLink="/skills">Skills</li>
+            <li>Projects</li>
+            <li routerLink="/login">Login</li>
+        </ul>
+    </nav>
+</div>
+
+<div>
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div *ngFor="let skill of skills" class="skill">{{ skill }}</div>
+    </div>
+</div>
+
